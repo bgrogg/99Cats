@@ -1,0 +1,6 @@
+<h1>All Cats Everything</h1>
+
+
+<% @cats.each do |cat| %>
+  <%=  link_to "#{cat.name}", cat_url(cat) %>
+<% end %>
