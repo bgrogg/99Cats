@@ -55,4 +55,8 @@ Rails.application.routes.draw do
   #   end
 
   resources :cats
+
+  resources :cat_rental_requests
+
+  root to: redirect("/cats")
 end

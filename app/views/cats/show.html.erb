@@ -16,3 +16,9 @@
   </tr>
 
 </table>
+
+<ul>
+  <% @requests.each do |request| %>
+  <li> <%= "#{request.start_date} - #{request.end_date}" %> </li>
+  <% end %>
+</ul>

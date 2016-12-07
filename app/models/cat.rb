@@ -3,7 +3,7 @@ class Cat < ActiveRecord::Base
   validates :color, inclusion: ["brown", "pink", "blue"]
   validates :sex, inclusion: ["F", "M"]
 
-  has_many :requests
+  has_many :requests,
     primary_key: :id,
     foreign_key: :cat_id,
     class_name: :CatRentalRequest, dependent: :destroy
